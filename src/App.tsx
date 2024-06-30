@@ -7,6 +7,7 @@ function App() {
 
   return (
     <>
+      <div className="font-special">Nav?</div>
       <div className="grid grid-cols-2 bg-black place-content-center">
         <div>
           <img src={header} alt="Rocks and waves" />
