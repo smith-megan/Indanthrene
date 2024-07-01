@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        special: ['"Playwrite DE Grund"', '"sans-serif"'],
+        special: ['"Quicksand"', '"sans-serif"'],
       },
     },
   },
