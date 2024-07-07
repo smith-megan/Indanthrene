@@ -28,13 +28,36 @@ function App() {
       </div>
       <div>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          Software Engineer looking to grow through problem solving and building
+          code. Experienced deploying Full-stack systems with React and Node.js,
+          and open and eager to learn additional languages and systems.
+        </p>
+        <p>
+          Atlas Technology Engineer 2024-Present Utilized Visual Basic to
+          quickly extract needed data for thousands of products from engineer
+          models in a fraction of required time Organized, edited, combined, and
+          created mechanical drawings and models
+        </p>
+        <p>
+          Scheduling and CRM System Contract Full Stack Programmer 2021-2022
+          Created stream-lined and user-friendly scheduling system with React,
+          Express, Postgres, Docker, Nginx, Bcrypt and Passport JS
+        </p>
+        <p>
+          Dev Mountain Capstone Project 2021 Formulated application to help
+          track data, notes, and personalized tips for insomnia Integrated
+          ChartJS library to visually display data input by users Created
+          PostgreSQL tables to effectively store and organize data with
+          SQLAlchemy as an ORM
+        </p>
+        <p>
+          Smith Design & Technology Web Designer, User Interface Design, and
+          Graphic Design 2019 to 2021 Partnered with a Senior Dev and
+          implemented a multi-stage registration flow that included email
+          verification, responsive options, and payment processing Built a SASS
+          custom-styled React information website that featured a shopping cart
+          experience and email contact integration for a startup company to
+          build their web presence
         </p>
       </div>
     </>
