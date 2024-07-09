@@ -6,6 +6,10 @@ export default {
       fontFamily: {
         special: ['"Quicksand"', '"sans-serif"'],
       },
+      gridColumn: {
+        overlap: "1 / span 7",
+        underlap: "4 / -1",
+      },
     },
   },
   plugins: [],
