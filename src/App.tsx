@@ -49,16 +49,16 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="bg-black grid grid-flow-col gap-4 justify-center p-4">
-        <button className="bg-gray-300 mt-5 rounded-none p-3">
-          <img src={downloadImage} className="w-1/12" />
+      <div className="bg-black grid grid-flow-col grid-cols-4 gap-6 justify-center content-center justify-items-center p-4">
+        <button className="bg-gray-300 mt-5 rounded-none p-3 flex justify-center self-center w-2/3">
           .docx
+          <img src={downloadImage} className="w-1/5 p-2" />
         </button>
-        <button className="bg-gray-300 mt-5 rounded-none p-2">
-          <img src={downloadImage} className="w-1/12" />
+        <button className="bg-gray-300 mt-5 rounded-none p-3 flex justify-center w-2/3">
           .pdf
+          <img src={downloadImage} className="w-1/5 p-2" />
         </button>
-        <h1 className="text-white p-2">Paper Resume</h1>
+        <h1 className="text-white p-2 col-span-2">Paper Resume</h1>
       </div>
       <div className="timeline relative bg-lightgray after:content-['*'] after:absolute after:h-full after:bg-white after:w-[6px] after:top-0 after:left-1/2 after:ml-[-3px] z-[-1] after:animate-scroll-slow">
         <div className="container p-3 relative w-96 bg-white opacity-0 animate-move-down [animation-delay: 200ms]">
@@ -123,16 +123,58 @@ function App() {
           build their web presence
         </p>
       </div>
-      <div>
-        <h1>Projects</h1>
+      <div className="grid grid-cols-6 gap-3">
+        <div>
+          <h1>Portfolio</h1>
+          <p>A peek into some interesting current projects</p>
+          <p> hover for more details</p>
+          <button>
+            <img />
+            Github
+          </button>
+        </div>
+        <div>
+          <img src={drift} />
+          <p>A Timelapse Raspberry Pi system</p>
+        </div>
+        <div>
+          <img src={drift} />
+          <p>A Timelapse Raspberry Pi system</p>
+        </div>
+        <div>
+          <img src={drift} />
+          <p>A Timelapse Raspberry Pi system</p>
+        </div>
+        <div>
+          <img src={drift} />
+          <p>A Timelapse Raspberry Pi system</p>
+        </div>
+        <div>
+          <img src={drift} />
+          <p>A Timelapse Raspberry Pi system</p>
+        </div>
+        <div></div>
         <p>projects here</p>
       </div>
-      <div className="grid grid-cols-2">
-        <img src={beachImage} />
-        <div>
-          <h1>Contact</h1>
-          <form></form>
-          <button>Send</button>
+      <div className="grid grid-cols-3 gap-2 justify-items-center p-8">
+        <img src={beachImage} className="col-span-1" />
+        <div className="bg-black w-full p-8 col-span-2 justify-center grid">
+          <h1 className="text-white">Contact</h1>
+          <form className="grid grid-cols-1 gap-2 p-4 bg-white">
+            <label className="grid grid-cols-3 content-center justify-items-center">
+              Name
+              <input type="Text" className="bg-gray-200 p-2 col-span-2" />
+            </label>
+            <label className="grid grid-cols-3 content-center justify-items-center">
+              Email
+              <input type="Text" className="bg-gray-200 p-2 col-span-2" />
+            </label>
+            <label className="grid grid-cols-3 content-center justify-items-center">
+              Message
+              <input type="Text" className="bg-gray-200 p-2 col-span-2" />
+            </label>
+            <button className="bg-gray-300 rounded-none">Send</button>
+          </form>
         </div>
       </div>
     </>
