@@ -5,6 +5,8 @@ import drift from "./assets/images/drift.png"
 import rock from "./assets/images/rock.png"
 import beachImage from "./assets/images/beachsteps.png"
 import downloadImage from "./assets/download.png"
+// import resumePDF from "./assets/Megan T Smith Resume.pdf"
+// import resumeDocx from "./assets/Megan T Smith Resume.docx"
 import "./App.css"
 
 function App() {
@@ -50,14 +52,18 @@ function App() {
         </div>
       </div>
       <div className="bg-black grid grid-flow-col grid-cols-4 gap-6 justify-center content-center justify-items-center p-4">
-        <button className="bg-gray-300 mt-5 rounded-none p-3 flex justify-center self-center w-2/3">
-          .docx
-          <img src={downloadImage} className="w-1/5 p-2" />
-        </button>
-        <button className="bg-gray-300 mt-5 rounded-none p-3 flex justify-center w-2/3">
-          .pdf
-          <img src={downloadImage} className="w-1/5 p-2" />
-        </button>
+        <a href={"/Megan T Smith Resume.docx"}>
+          <button className="bg-gray-300 mt-5 rounded-none p-3 flex justify-center self-center w-2/3">
+            .docx
+            <img src={downloadImage} className="w-1/5 p-2" />
+          </button>
+        </a>
+        <a href={"/MeganTSmithResume.pdf"}>
+          <button className="bg-gray-300 mt-5 rounded-none p-3 flex justify-center w-2/3">
+            .pdf
+            <img src={downloadImage} className="w-1/5 p-2" />
+          </button>
+        </a>
         <h1 className="text-white p-2 col-span-2">Paper Resume</h1>
       </div>
       <div className="timeline relative bg-lightgray after:content-['*'] after:absolute after:h-full after:bg-white after:w-[6px] after:top-0 after:left-1/2 after:ml-[-3px] z-[-1] after:animate-scroll-slow">
@@ -123,38 +129,36 @@ function App() {
           build their web presence
         </p>
       </div>
-      <div className="grid grid-cols-6 gap-3">
-        <div>
+      <div className="p-4">
+        <div className="text-left flex p-2">
           <h1>Portfolio</h1>
-          <p>A peek into some interesting current projects</p>
-          <p> hover for more details</p>
-          <button>
-            <img />
-            Github
-          </button>
+          <div className="p-2">
+            <p>A peek into some interesting current projects</p>
+            <p> hover for details, click for Github Repo</p>
+          </div>
         </div>
-        <div>
-          <img src={drift} />
-          <p>A Timelapse Raspberry Pi system</p>
+        <div className="grid grid-cols-5 gap-3">
+          <div>
+            <img src={drift} />
+            <p>Raspberry Pi Timelapse</p>
+          </div>
+          <div>
+            <img src={drift} />
+            <p>A Timelapse Raspberry Pi system</p>
+          </div>
+          <div>
+            <img src={drift} />
+            <p>A Timelapse Raspberry Pi system</p>
+          </div>
+          <div>
+            <img src={drift} />
+            <p>A Timelapse Raspberry Pi system</p>
+          </div>
+          <div>
+            <img src={drift} />
+            <p>A Timelapse Raspberry Pi system</p>
+          </div>
         </div>
-        <div>
-          <img src={drift} />
-          <p>A Timelapse Raspberry Pi system</p>
-        </div>
-        <div>
-          <img src={drift} />
-          <p>A Timelapse Raspberry Pi system</p>
-        </div>
-        <div>
-          <img src={drift} />
-          <p>A Timelapse Raspberry Pi system</p>
-        </div>
-        <div>
-          <img src={drift} />
-          <p>A Timelapse Raspberry Pi system</p>
-        </div>
-        <div></div>
-        <p>projects here</p>
       </div>
       <div className="grid grid-cols-3 gap-2 justify-items-center p-8">
         <img src={beachImage} className="col-span-1" />
@@ -177,6 +181,7 @@ function App() {
           </form>
         </div>
       </div>
+      <div className="bg-black h-10"></div>
     </>
   )
 }
