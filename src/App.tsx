@@ -16,9 +16,15 @@ function App() {
     <>
       <div className="font-special grid grid-flow-col align-middle mb-2">
         <img src={logo} className="self-center w-20 pl-4 pt-3"></img>
-        <h2 className="self-center">Projects</h2>
-        <h2 className="self-center">Resume</h2>
-        <h2 className="self-center">Contact</h2>
+        <a href="#Portfolio">
+          <h2 className="self-center">Projects</h2>
+        </a>
+        <a href="#Resume">
+          <h2 className="self-center">Resume</h2>
+        </a>
+        <a href="#Contact">
+          <h2 className="self-center">Contact</h2>
+        </a>
       </div>
       <div className="grid grid-cols-2 bg-black place-content-center">
         <div>
@@ -51,7 +57,10 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="bg-black grid grid-flow-col grid-cols-4 gap-6 justify-center content-center justify-items-center p-4">
+      <div
+        className="bg-black grid grid-flow-col grid-cols-4 gap-6 justify-center content-center justify-items-center p-4"
+        id="Resume"
+      >
         <a href={"/Megan T Smith Resume.docx"}>
           <button className="bg-gray-300 mt-5 rounded-none p-3 flex justify-center self-center w-2/3">
             .docx
@@ -129,7 +138,7 @@ function App() {
           build their web presence
         </p>
       </div>
-      <div className="p-4">
+      <div className="p-4" id="Portfolio">
         <div className="text-left flex p-2">
           <h1>Portfolio</h1>
           <div className="p-2">
@@ -160,7 +169,10 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-2 justify-items-center p-8">
+      <div
+        className="grid grid-cols-3 gap-2 justify-items-center p-8"
+        id="Contact"
+      >
         <img src={beachImage} className="col-span-1" />
         <div className="bg-black w-full p-8 col-span-2 justify-center grid">
           <h1 className="text-white">Contact</h1>
