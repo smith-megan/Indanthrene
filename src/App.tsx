@@ -16,14 +16,14 @@ function App() {
     <>
       <div className="font-special grid grid-flow-col align-middle mb-2">
         <img src={logo} className="self-center w-20 pl-4 pt-3"></img>
-        <a href="#Portfolio">
-          <h2 className="self-center">Projects</h2>
+        <a className="self-center" href="#Portfolio">
+          <h2>Projects</h2>
         </a>
-        <a href="#Resume">
-          <h2 className="self-center">Resume</h2>
+        <a className="self-center" href="#Resume">
+          <h2>Resume</h2>
         </a>
-        <a href="#Contact">
-          <h2 className="self-center">Contact</h2>
+        <a className="self-center" href="#Contact">
+          <h2>Contact</h2>
         </a>
       </div>
       <div className="grid grid-cols-2 bg-black place-content-center">
@@ -33,20 +33,27 @@ function App() {
         <div className="self-center">
           <h1 className="text-gray-200 font-special">Megan Smith</h1>
           <p className="text-gray-400">Software Engineer</p>
-          <button className="bg-gray-300 mt-5 rounded-none">
-            Let me introduce myself
-          </button>
+          <a className="self-center" href="#Intro">
+            <button className="bg-gray-300 mt-5 rounded-none">
+              Let me introduce myself
+            </button>
+          </a>
         </div>
       </div>
-      <div className="grid grid-cols-2 box-border p-20">
+      <div className="grid grid-cols-2 box-border p-20" id="Intro">
         <div className="p-10 self-center">
-          <h1 className="p-4">Impact</h1>
+          <h1 className="p-4">Grow, Create, and Deliver</h1>
           <p>
-            Software Engineer looking to grow through problem solving and
-            building code. Experienced deploying Full-stack systems with React
-            and Node.js, and open and eager to learn additional languages and
-            systems.
+            I am a Software Engineer looking to deliver through problem solving
+            with code. Experienced creating Full-stack systems with React and
+            Node.js, and open and eager to grow as I learn additional languages
+            and systems.
           </p>
+          <a className="self-center" href="#Resume">
+            <button className="bg-gray-300 mt-5 rounded-none">
+              Where I've been
+            </button>
+          </a>
         </div>
         <div className="grid grid-cols-12 relative">
           <div className="row-start-1 col-overlap pt-12 z-10">
@@ -58,91 +65,118 @@ function App() {
         </div>
       </div>
       <div
-        className="bg-black grid grid-flow-col grid-cols-4 gap-6 justify-center content-center justify-items-center p-4"
+        className="bg-black grid grid-cols-2 justify-center items-center place-content-around p-4 w-full"
         id="Resume"
       >
-        <a href={"/Megan T Smith Resume.docx"}>
-          <button className="bg-gray-300 mt-5 rounded-none p-3 flex justify-center self-center w-2/3">
+        <h1 className="text-white p-2">Resume</h1>
+        <div className="grid grid-cols-2 gap-5">
+          <a
+            href={"/MeganTSmithResume.docx"}
+            className="bg-gray-300 rounded-none flex justify-center self-center items-center"
+          >
             .docx
             <img src={downloadImage} className="w-1/5 p-2" />
-          </button>
-        </a>
-        <a href={"/MeganTSmithResume.pdf"}>
-          <button className="bg-gray-300 mt-5 rounded-none p-3 flex justify-center w-2/3">
+          </a>
+          <a
+            href={"/MeganTSmithResume.pdf"}
+            className="bg-gray-300 rounded-none flex justify-center self-center items-center"
+          >
             .pdf
             <img src={downloadImage} className="w-1/5 p-2" />
-          </button>
-        </a>
-        <h1 className="text-white p-2 col-span-2">Paper Resume</h1>
+          </a>
+        </div>
       </div>
-      <div className="timeline relative bg-lightgray after:content-['*'] after:absolute after:h-full after:bg-white after:w-[6px] after:top-0 after:left-1/2 after:ml-[-3px] z-[-1] after:animate-scroll-slow">
-        <div className="container p-3 relative w-96 bg-white opacity-0 animate-move-down [animation-delay: 200ms]">
-          <img
-            className="absolute w-20 right-[-220px] rounded-full"
-            src={rock}
-          />
-          <div className="textbox p-2 relative">
-            <h1>Atlas Technology</h1>
+      <div className="grid grid-cols-2 gap-y-5 pt-7 pb-7 relative bg-lightgray after:content-[''] after:absolute after:h-full after:bg-white after:w-[6px] after:top-0 after:left-1/2 after:ml-[-3px] after:animate-scroll-slow">
+        <div className="relative col-span-1 justify-center place-self-center w-3/5 bg-white">
+          <img className="w-full h-10 object-cover" src={rock} />
+          <div className="textbox p-7 relative">
+            <h1 className="text-4xl">Atlas Technology</h1>
             <small>2024-present</small>
-            <p>
-              Atlas Technology Engineer 2024-Present Utilized Visual Basic to
-              quickly extract needed data for thousands of products from
-              engineer models in a fraction of required time Organized, edited,
-              combined, and created mechanical drawings and models
+            <p className="text-left pt-3 pb-2">
+              • Utilized Visual Basic to quickly extract data for thousands of
+              products from engineer models in a fraction of required time
+            </p>
+            <p className="text-left">
+              • Organized, edited, combined, and created mechanical drawings and
+              models
               <span className="h-0 w-0 absolute top-1 border-t-[35px] border-t-transparent border-b-[35px] border-b-transparent border-l-[35px] border-l-white right-[-30px] z-0"></span>
             </p>
           </div>
         </div>
 
-        <div className="container p-2 relative w-96 left-1/2 bg-white opacity-0 animate-move-down delay-700">
+        <div className="relative col-start-2 row-start-2 justify-center place-self-center w-3/5 bg-white">
           <img
-            className="absolute w-20 z-10 left-[-220px] rounded-full"
-            src={drift}
+            className="w-full h-10 object-cover object-top-left"
+            src={header}
           />
-          <div className="textbox p-2 relative">
-            <h1>CRM Contract</h1>
-            <small>2024-present</small>
-            <p>
-              Scheduling and CRM System Contract Full Stack Programmer 2021-2022
-              Created stream-lined and user-friendly scheduling system with
+          <div className="textbox p-7 relative">
+            <h1 className="text-4xl">CRM Contract</h1>
+            <small>2021-2022</small>
+            <p className="text-left pt-3">
+              • Created stream-lined and user-friendly scheduling system with
               React, Express, Postgres, Docker, Nginx, Bcrypt and Passport JS
               <span className="h-0 w-0 absolute top-1 border-t-[35px] border-t-transparent border-b-[35px] border-b-transparent border-r-[35px] border-r-white left-[-30px] z-0"></span>
             </p>
           </div>
         </div>
-        <div className="container p-2 relative w-96 left-1/2 bg-white opacity-0 animate-move-down delay-700">
+        <div className="relative col-span-1 row-start-3 justify-center place-self-center w-3/5 bg-white">
           <img
-            className="absolute w-20 z-10 left-[-220px] rounded-full"
-            src={drift}
+            className="w-full h-10 object-cover object-bottom"
+            src={header}
           />
-          <div className="textbox p-2 relative">
-            <h1>CRM Contract</h1>
-            <small>2024-present</small>
-            <p>
-              Dev Mountain Capstone Project 2021 Formulated application to help
-              track data, notes, and personalized tips for insomnia Integrated
-              ChartJS library to visually display data input by users Created
-              PostgreSQL tables to effectively store and organize data with
-              SQLAlchemy as an ORM
-              <span className="h-0 w-0 absolute top-1 border-t-[35px] border-t-transparent border-b-[35px] border-b-transparent border-r-[35px] border-r-white left-[-30px] z-0"></span>
+          <div className="textbox p-7 relative">
+            <h1 className="text-4xl">Dev Mountain Final</h1>
+            <small>2021</small>
+            <p className="text-left pt-3 pb-2">
+              •Formulated application to help track data, notes, and
+              personalized tips for insomnia
             </p>
+            <p className="text-left pb-2">
+              • Created PostgreSQL tables to effectively store and organize data
+              with SQLAlchemy as an ORM
+            </p>
+            <p className="text-left">
+              • Integrated ChartJS library to visually display data input by
+              users
+            </p>
+            <span className="h-0 w-0 absolute top-1 border-t-[35px] border-t-transparent border-b-[35px] border-b-transparent border-l-[35px] border-l-white right-[-30px] z-0"></span>
           </div>
         </div>
-        <p>
-          Smith Design & Technology Web Designer, User Interface Design, and
-          Graphic Design 2019 to 2021 Partnered with a Senior Dev and
-          implemented a multi-stage registration flow that included email
-          verification, responsive options, and payment processing Built a SASS
-          custom-styled React information website that featured a shopping cart
-          experience and email contact integration for a startup company to
-          build their web presence
-        </p>
+        <div className="relative col-start-2 row-start-4 justify-center place-self-center w-3/5 bg-white">
+          <img className="w-full h-10 object-cover object-bottom" src={rock} />
+          <div className="textbox p-7 relative">
+            <h1 className="text-4xl">Smith Design & Technology</h1>
+            <small>2019 – 2021</small>
+            <p className="text-left pt-3 pb-2">
+              • Partnered with a Senior Dev and implemented a multi-stage
+              registration flow that included email verification, responsive
+              options, and payment processing
+            </p>
+            <p className="text-left">
+              • Built a SASS custom-styled React information website that
+              featured a shopping cart experience and email contact integration
+              for a startup company to build their web presence
+            </p>
+            <span className="h-0 w-0 absolute top-1 border-t-[35px] border-t-transparent border-b-[35px] border-b-transparent border-r-[35px] border-r-white left-[-30px] z-0"></span>
+          </div>
+        </div>
+        <div className="relative col-span-1 row-start-5 justify-center place-self-center w-3/5 bg-white">
+          <img className="w-full h-10 object-cover object-top" src={rock} />
+          <div className="textbox p-7 relative">
+            <h1 className="text-4xl">K2 Energy</h1>
+            <small>2017-2019</small>
+            <p className="text-left pt-3 pb-2">
+              • Marketing Manager of Battery Engineering company
+            </p>
+            <span className="h-0 w-0 absolute top-1 border-t-[35px] border-t-transparent border-b-[35px] border-b-transparent border-l-[35px] border-l-white right-[-30px] z-0"></span>
+          </div>
+        </div>
       </div>
       <div className="p-4" id="Portfolio">
         <div className="text-left flex p-2">
           <h1>Portfolio</h1>
           <div className="p-2">
-            <p>A peek into some interesting current projects</p>
+            <p>A peek into some interesting projects</p>
             <p> hover for details, click for Github Repo</p>
           </div>
         </div>
@@ -153,19 +187,19 @@ function App() {
           </div>
           <div>
             <img src={drift} />
-            <p>A Timelapse Raspberry Pi system</p>
+            <p>Daily Habit System</p>
           </div>
           <div>
             <img src={drift} />
-            <p>A Timelapse Raspberry Pi system</p>
+            <p>Mat Guide</p>
           </div>
           <div>
             <img src={drift} />
-            <p>A Timelapse Raspberry Pi system</p>
+            <p>Customer tracking system</p>
           </div>
           <div>
             <img src={drift} />
-            <p>A Timelapse Raspberry Pi system</p>
+            <p>Sleep tracker</p>
           </div>
         </div>
       </div>
