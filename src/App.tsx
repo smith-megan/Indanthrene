@@ -5,8 +5,11 @@ import drift from "./assets/images/drift.png"
 import rock from "./assets/images/rock.png"
 import beachImage from "./assets/images/beachsteps.png"
 import downloadImage from "./assets/download.png"
-// import resumePDF from "./assets/Megan T Smith Resume.pdf"
-// import resumeDocx from "./assets/Megan T Smith Resume.docx"
+import clientImage from "./assets/images/client.jpg"
+import matImage from "./assets/images/mat guide.jpg"
+import ticImage from "./assets/images/habit.jpg"
+import sleepImage from "./assets/images/sleep.jpg"
+import timeImage from "./assets/images/timelapse.jpg"
 import "./App.css"
 
 function App() {
@@ -14,8 +17,8 @@ function App() {
 
   return (
     <>
-      <div className="font-special grid grid-flow-col align-middle mb-2">
-        <img src={logo} className="self-center w-20 pl-4 pt-3"></img>
+      <div className="font-special bg-white grid grid-flow-col align-middle sticky top-0 z-20 p-3 shadow-sm">
+        <img src={logo} className="self-center w-20 pl-4 p-1"></img>
         <a className="self-center" href="#Portfolio">
           <h2>Projects</h2>
         </a>
@@ -177,28 +180,31 @@ function App() {
           <h1>Portfolio</h1>
           <div className="p-2">
             <p>A peek into some interesting projects</p>
-            <p> hover for details, click for Github Repo</p>
+            <p>Hover for details, click for Github Repo</p>
           </div>
         </div>
         <div className="grid grid-cols-5 gap-3">
           <div>
-            <img src={drift} />
+            <img
+              src={timeImage}
+              className="w-full object-cover h-96 hover:h-2 "
+            />
             <p>Raspberry Pi Timelapse</p>
           </div>
           <div>
-            <img src={drift} />
+            <img src={ticImage} className="w-full object-cover h-96" />
             <p>Daily Habit System</p>
           </div>
           <div>
-            <img src={drift} />
+            <img src={matImage} className="w-full object-cover h-96" />
             <p>Mat Guide</p>
           </div>
           <div>
-            <img src={drift} />
-            <p>Customer tracking system</p>
+            <img src={clientImage} className="w-full object-cover h-96" />
+            <p>Customer Dashboard</p>
           </div>
           <div>
-            <img src={drift} />
+            <img src={sleepImage} className="w-full object-cover h-96" />
             <p>Sleep tracker</p>
           </div>
         </div>
