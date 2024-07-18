@@ -178,43 +178,72 @@ function App() {
       <div className="p-4 text-white" id="Portfolio">
         <div className="text-left flex p-2">
           <h1>Portfolio</h1>
-          <div className="p-2">
-            <p>A peek into some interesting projects</p>
-            <p>Hover for details, click for Github Repo</p>
-          </div>
+          {/* <div className="p-2"> */}
+          <p className="p-2 justify-center self-center">Recent projects</p>
+          {/* <p>Hover for details</p> */}
+          {/* </div> */}
         </div>
-        <div className="grid grid-cols-5 gap-3">
+        <div className="grid grid-cols-3 gap-7 p-10">
           <div>
             <div
-              className="bg-cover h-96 group"
+              className="bg-cover h-60 group z-10 items-center overflow-hidden"
               style={{ backgroundImage: `url(${timeImage})` }}
             >
-              {/* <img
-              src={timeImage}
-              className="w-full object-cover h-96 hover:h-96 row-start-1"
-              /> */}
-              <p className="bg-black text-white p-2 z-10 row-start-1 opacity-0 group-hover:opacity-100">
-                Test paragraph Test paragraph Test paragraph Test paragraph
-              </p>
+              <div className="z-20 items-center duration-500 justify-center w-full transition-all h-60 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/50 group-hover:to-black/70">
+                <div className="text-white place-self-end transition-all duration-500 translate-y-[275%] group-hover:translate-y-10">
+                  <h2 className="text-lg">Raspberry Pi Timelapse</h2>
+                  <p className="opacity-0 transition-all duration-300 group-hover:opacity-100">
+                    Photo capturing timelapse written in python
+                  </p>
+                </div>
+              </div>
             </div>
-            <p>Raspberry Pi Timelapse</p>
           </div>
           <div>
-            <img src={ticImage} className="w-full object-cover h-96" />
-            <p>Daily Habit System</p>
+            <div
+              className="bg-cover h-60 group z-10 items-center overflow-hidden"
+              style={{ backgroundImage: `url(${matImage})` }}
+            >
+              <div className="z-20 items-center duration-500 justify-center w-full transition-all h-60 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/50 group-hover:to-black/70">
+                <div className="text-white place-self-end transition-all duration-500 translate-y-[275%] group-hover:translate-y-10">
+                  <h2 className="text-lg">Mat Guide</h2>
+                  <p className="opacity-0 transition-all duration-300 group-hover:opacity-100">
+                    Timed yoga session guide software written in React with
+                    Typescript
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
           <div>
-            <img src={matImage} className="w-full object-cover h-96" />
+            <div
+              className="bg-cover h-60 group z-10 items-center overflow-hidden"
+              style={{ backgroundImage: `url(${ticImage})` }}
+            >
+              <div className="z-20 items-center duration-500 justify-center w-full transition-all h-60 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/50 group-hover:to-black/70">
+                <div className="text-white place-self-end transition-all duration-500 translate-y-[165%] group-hover:translate-y-10">
+                  <h2 className="text-lg">Habit Tracking System</h2>
+                  <p className="opacity-0 transition-all duration-300 group-hover:opacity-100">
+                    Generating habit tracking system written in React with
+                    Typescript, NodeJs and Express backend, Database with
+                    Postgres and Sequilize
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* <div>
+            <img src={matImage} className="w-full object-cover h-60" />
             <p>Mat Guide</p>
-          </div>
-          <div>
-            <img src={clientImage} className="w-full object-cover h-96" />
+          </div> */}
+          {/* <div>
+            <img src={clientImage} className="w-full object-cover h-60" />
             <p>Customer Dashboard</p>
           </div>
           <div>
-            <img src={sleepImage} className="w-full object-cover h-96" />
+            <img src={sleepImage} className="w-full object-cover h-60" />
             <p>Sleep tracker</p>
-          </div>
+          </div> */}
         </div>
       </div>
       <div
