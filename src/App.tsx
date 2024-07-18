@@ -17,7 +17,7 @@ function App() {
 
   return (
     <>
-      <div className="font-special bg-white grid grid-flow-col align-middle sticky top-0 z-20 p-3 shadow-sm">
+      <div className="font-special bg-white grid grid-flow-col align-middle sticky top-0 z-20 p-2 shadow-sm">
         <img src={logo} className="self-center w-20 pl-4 p-1"></img>
         <a className="self-center" href="#Portfolio">
           <h2>Projects</h2>
@@ -45,8 +45,8 @@ function App() {
       </div>
       <div className="grid grid-cols-2 box-border p-20" id="Intro">
         <div className="p-10 self-center">
-          <h1 className="p-4">Grow, Create, and Deliver</h1>
-          <p>
+          <h1 className="p-4 text-white">Grow, Create, and Deliver</h1>
+          <p className="text-white">
             I am a Software Engineer looking to deliver through problem solving
             with code. Experienced creating Full-stack systems with React and
             Node.js, and open and eager to grow as I learn additional languages
@@ -175,7 +175,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="p-4" id="Portfolio">
+      <div className="p-4 text-white" id="Portfolio">
         <div className="text-left flex p-2">
           <h1>Portfolio</h1>
           <div className="p-2">
@@ -185,10 +185,18 @@ function App() {
         </div>
         <div className="grid grid-cols-5 gap-3">
           <div>
-            <img
+            <div
+              className="bg-cover h-96 group"
+              style={{ backgroundImage: `url(${timeImage})` }}
+            >
+              {/* <img
               src={timeImage}
-              className="w-full object-cover h-96 hover:h-2 "
-            />
+              className="w-full object-cover h-96 hover:h-96 row-start-1"
+              /> */}
+              <p className="bg-black text-white p-2 z-10 row-start-1 opacity-0 group-hover:opacity-100">
+                Test paragraph Test paragraph Test paragraph Test paragraph
+              </p>
+            </div>
             <p>Raspberry Pi Timelapse</p>
           </div>
           <div>
@@ -210,7 +218,7 @@ function App() {
         </div>
       </div>
       <div
-        className="grid grid-cols-3 gap-2 justify-items-center p-8"
+        className="grid grid-cols-3 gap-3 justify-items-center pb-3"
         id="Contact"
       >
         <img src={beachImage} className="col-span-1" />
