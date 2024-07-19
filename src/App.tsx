@@ -5,7 +5,7 @@ import drift from "./assets/images/drift.png"
 import rock from "./assets/images/rock.png"
 import beachImage from "./assets/images/beachsteps.png"
 import downloadImage from "./assets/download.png"
-import clientImage from "./assets/images/client.jpg"
+// import clientImage from "./assets/images/client.jpg"
 import matImage from "./assets/images/mat guide.jpg"
 import ticImage from "./assets/images/habit.jpg"
 import sleepImage from "./assets/images/sleep.jpg"
@@ -183,16 +183,16 @@ function App() {
           {/* <p>Hover for details</p> */}
           {/* </div> */}
         </div>
-        <div className="grid grid-cols-3 gap-7 p-10">
+        <div className="grid grid-cols-4 gap-7 p-10">
           <div>
             <div
-              className="bg-cover h-60 group z-10 items-center overflow-hidden"
+              className="bg-cover bg-center h-60 group z-10 items-center overflow-hidden"
               style={{ backgroundImage: `url(${timeImage})` }}
             >
               <div className="z-20 items-center duration-500 justify-center w-full transition-all h-60 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/50 group-hover:to-black/70">
                 <div className="text-white place-self-end transition-all duration-500 translate-y-[275%] group-hover:translate-y-10">
                   <h2 className="text-lg">Raspberry Pi Timelapse</h2>
-                  <p className="opacity-0 transition-all duration-300 group-hover:opacity-100">
+                  <p className="text-sm opacity-0 transition-all duration-300 group-hover:opacity-100">
                     Photo capturing timelapse written in python
                   </p>
                 </div>
@@ -201,13 +201,13 @@ function App() {
           </div>
           <div>
             <div
-              className="bg-cover h-60 group z-10 items-center overflow-hidden"
+              className="bg-cover bg-center h-60 group z-10 items-center overflow-hidden"
               style={{ backgroundImage: `url(${matImage})` }}
             >
               <div className="z-20 items-center duration-500 justify-center w-full transition-all h-60 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/50 group-hover:to-black/70">
-                <div className="text-white place-self-end transition-all duration-500 translate-y-[275%] group-hover:translate-y-10">
+                <div className="text-white place-self-end transition-all duration-500 translate-y-[210%] group-hover:translate-y-10">
                   <h2 className="text-lg">Mat Guide</h2>
-                  <p className="opacity-0 transition-all duration-300 group-hover:opacity-100">
+                  <p className="text-sm opacity-0 transition-all duration-300 group-hover:opacity-100">
                     Timed yoga session guide software written in React with
                     Typescript
                   </p>
@@ -217,56 +217,60 @@ function App() {
           </div>
           <div>
             <div
-              className="bg-cover h-60 group z-10 items-center overflow-hidden"
+              className="bg-cover bg-center h-60 group z-10 items-center overflow-hidden"
               style={{ backgroundImage: `url(${ticImage})` }}
             >
               <div className="z-20 items-center duration-500 justify-center w-full transition-all h-60 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/50 group-hover:to-black/70">
-                <div className="text-white place-self-end transition-all duration-500 translate-y-[165%] group-hover:translate-y-10">
-                  <h2 className="text-lg">Habit Tracking System</h2>
-                  <p className="opacity-0 transition-all duration-300 group-hover:opacity-100">
-                    Generating habit tracking system written in React with
-                    Typescript, NodeJs and Express backend, Database with
-                    Postgres and Sequilize
+                <div className="text-white place-self-end transition-all duration-500 translate-y-[175%] group-hover:translate-y-10">
+                  <h2 className="text-lg">Habit System</h2>
+                  <p className="text-sm opacity-0 transition-all duration-300 group-hover:opacity-100">
+                    Habit tracking system written in React with Typescript,
+                    NodeJs and Express backend, Database with Postgres and
+                    Sequilize
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          {/* <div>
-            <img src={matImage} className="w-full object-cover h-60" />
-            <p>Mat Guide</p>
-          </div> */}
-          {/* <div>
-            <img src={clientImage} className="w-full object-cover h-60" />
-            <p>Customer Dashboard</p>
-          </div>
           <div>
-            <img src={sleepImage} className="w-full object-cover h-60" />
-            <p>Sleep tracker</p>
-          </div> */}
+            <div
+              className="bg-cover bg-center h-60 group z-10 items-center overflow-hidden"
+              style={{ backgroundImage: `url(${sleepImage})` }}
+            >
+              <div className="z-20 items-center duration-500 justify-center w-full transition-all h-60 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/50 group-hover:to-black/70">
+                <div className="text-white place-self-end transition-all duration-500 translate-y-[208%] group-hover:translate-y-10">
+                  <h2 className="text-lg">Sleep Tracker</h2>
+                  <p className="text-sm opacity-0 transition-all duration-300 group-hover:opacity-100">
+                    Sleep graph data system with React frontend and Python
+                    backend
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div
-        className="grid grid-cols-3 gap-3 justify-items-center pb-3"
-        id="Contact"
-      >
+      <div className="grid w-full grid-cols-3 items-center pb-3" id="Contact">
         <img src={beachImage} className="col-span-1" />
-        <div className="bg-black w-full p-8 col-span-2 justify-center grid">
+        <div className="bg-black h-full p-8 col-span-2 justify-center grid gap-5 items-center">
           <h1 className="text-white">Contact</h1>
-          <form className="grid grid-cols-1 gap-2 p-4 bg-white">
-            <label className="grid grid-cols-3 content-center justify-items-center">
-              Name
-              <input type="Text" className="bg-gray-200 p-2 col-span-2" />
-            </label>
-            <label className="grid grid-cols-3 content-center justify-items-center">
-              Email
-              <input type="Text" className="bg-gray-200 p-2 col-span-2" />
-            </label>
-            <label className="grid grid-cols-3 content-center justify-items-center">
-              Message
-              <input type="Text" className="bg-gray-200 p-2 col-span-2" />
-            </label>
-            <button className="bg-gray-300 rounded-none">Send</button>
+          <form className="h-full w-full grid grid-cols-1 gap-2 p-8 bg-white items-center">
+            <input
+              placeholder="Name"
+              type="Text"
+              className="bg-white border-2 border-white border-b-gray-500 p-2 col-span-2 outline-gray-200"
+            />
+            <input
+              placeholder="Email"
+              type="Text"
+              className="bg-white border-2 border-white border-b-gray-500 p-2 col-span-2 outline-gray-200"
+            />
+            <input
+              placeholder="Message"
+              type="Text"
+              className="bg-white border-2 border-white border-b-gray-500 p-2 col-span-2 outline-gray-200"
+            />
+            <button className="bg-gray-300 rounded-none mt-3">Send</button>
           </form>
         </div>
       </div>
