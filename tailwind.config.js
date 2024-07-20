@@ -26,7 +26,8 @@ export default {
         },
       },
       colors: {
-        lightgray: "#D6D5D3",
+        lightgray: "#ABAAA6",
+        dark: "#242424",
       },
     },
   },
