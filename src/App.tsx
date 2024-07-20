@@ -1,7 +1,6 @@
 import header from "./assets/images/shore.jpg"
 import drift from "./assets/images/drift.png"
 import rock from "./assets/images/rock.png"
-import beachImage from "./assets/images/beachsteps.png"
 import downloadImage from "./assets/download.png"
 import matImage from "./assets/images/mat guide.jpg"
 import ticImage from "./assets/images/habit.jpg"
@@ -9,6 +8,7 @@ import sleepImage from "./assets/images/sleep.jpg"
 import timeImage from "./assets/images/timelapse.jpg"
 import "./App.css"
 import Nav from "./Nav"
+import Contact from "./Contact"
 
 function App() {
   return (
@@ -236,29 +236,8 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="grid w-full grid-cols-3 items-center pb-3" id="Contact">
-        <img src={beachImage} className="col-span-1" />
-        <div className="bg-black h-full p-8 col-span-2 justify-center grid gap-5 items-center">
-          <h1 className="text-white">Contact</h1>
-          <form className="h-full w-full grid grid-cols-1 gap-2 p-8 bg-white items-center">
-            <input
-              placeholder="Name"
-              type="Text"
-              className="bg-white border-2 border-white border-b-gray-500 p-2 col-span-2 outline-gray-200"
-            />
-            <input
-              placeholder="Email"
-              type="Text"
-              className="bg-white border-2 border-white border-b-gray-500 p-2 col-span-2 outline-gray-200"
-            />
-            <input
-              placeholder="Message"
-              type="Text"
-              className="bg-white border-2 border-white border-b-gray-500 p-2 col-span-2 outline-gray-200"
-            />
-            <button className="bg-gray-300 rounded-none mt-3">Send</button>
-          </form>
-        </div>
+      <div id="Contact">
+        <Contact />
       </div>
       <div className="bg-black h-10"></div>
     </>
