@@ -19,10 +19,12 @@ function App() {
           <img src={header} alt="Rocks and waves" />
         </div>
         <div className="self-center">
-          <h1 className="text-gray-200 font-special">Megan Smith</h1>
-          <p className="text-gray-400">Software Engineer</p>
+          <h1 className="text-gray-200 font-special text-4xl sm:text-6xl sm:pb-2">
+            Megan Smith
+          </h1>
+          <p className="text-gray-400 sm:pb-2">Software Engineer</p>
           <a className="self-center" href="#Intro">
-            <button className="bg-gray-300 mt-4 rounded-none w-1/2 text-sm">
+            <button className="bg-gray-300 mt-4 rounded-none w-1/2 text-xs sm:text-sm">
               Let me introduce myself
             </button>
           </a>
@@ -38,7 +40,7 @@ function App() {
           </div>
         </div>
         <div className="p-1 sm:p-5 self-center">
-          <h1 className="p-4 pt-2 sm:pt-4 text-white">
+          <h1 className="p-4 pt-2 text-4xl sm:text-6xl sm:pt-4 text-white">
             Grow, Create, and Deliver
           </h1>
           <p className="text-white">
@@ -77,7 +79,7 @@ function App() {
         </div>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-5 pt-2 pb-2 sm:pt-7 sm:pb-7 relative bg-lightgray after:content-[''] after:absolute after:h-full after:bg-white after:w-[6px] after:top-0 after:left-1/2 after:ml-[-3px] after:animate-scroll-slow">
-        <div className="relative sm:col-start-1 justify-center place-self-center w-3/5 bg-white z-10">
+        <div className="relative sm:col-start-1 justify-center place-self-center w-[90%] sm:w-3/5 bg-white z-10">
           <img className="w-full h-10 object-cover" src={rock} />
           <div className="textbox p-7 relative">
             <h1 className="text-4xl">Atlas Technology</h1>
@@ -94,7 +96,7 @@ function App() {
           </div>
         </div>
 
-        <div className="relative sm:col-start-2 sm:row-start-2 justify-center place-self-center w-3/5 bg-white z-10">
+        <div className="relative sm:col-start-2 sm:row-start-2 justify-center place-self-center w-[90%] sm:w-3/5 bg-white z-10">
           <img
             className="w-full h-10 object-cover object-top-left"
             src={header}
@@ -109,7 +111,7 @@ function App() {
             </p>
           </div>
         </div>
-        <div className="relative sm:col-span-1 sm:row-start-3 justify-center place-self-center w-3/5 bg-white z-10">
+        <div className="relative sm:col-span-1 sm:row-start-3 justify-center place-self-center w-[90%] sm:w-3/5 bg-white z-10">
           <img
             className="w-full h-10 object-cover object-bottom"
             src={header}
@@ -132,7 +134,7 @@ function App() {
             <span className="opacity-0 sm:opacity-100 h-0 w-0 absolute top-1 border-t-[35px] border-t-transparent border-b-[35px] border-b-transparent border-l-[35px] border-l-white right-[-30px] z-0"></span>
           </div>
         </div>
-        <div className="relative sm:col-start-2 sm:row-start-4 justify-center place-self-center w-3/5 bg-white z-10">
+        <div className="relative sm:col-start-2 sm:row-start-4 justify-center place-self-center w-[90%] sm:w-3/5 bg-white z-10">
           <img className="w-full h-10 object-cover object-bottom" src={rock} />
           <div className="textbox p-7 relative">
             <h1 className="text-4xl">Smith Design & Technology</h1>
@@ -150,7 +152,7 @@ function App() {
             <span className="opacity-0 sm:opacity-100 h-0 w-0 absolute top-1 border-t-[35px] border-t-transparent border-b-[35px] border-b-transparent border-r-[35px] border-r-white left-[-30px] z-0"></span>
           </div>
         </div>
-        <div className="relative sm:col-span-1 sm:row-start-5 justify-center place-self-center w-3/5 bg-white z-10">
+        <div className="relative sm:col-span-1 sm:row-start-5 justify-center place-self-center w-[90%] sm:w-3/5 bg-white z-10">
           <img className="w-full h-10 object-cover object-top" src={rock} />
           <div className="textbox p-7 relative">
             <h1 className="text-4xl">K2 Energy</h1>
@@ -163,7 +165,7 @@ function App() {
         </div>
       </div>
       <div className="p-4 text-white" id="Portfolio">
-        <div className="text-left flex p-2">
+        <div className="text-left sm:flex p-2">
           <h1>Portfolio</h1>
           <p className="p-2 justify-center self-center">
             Recent projects, hover for details
@@ -181,6 +183,14 @@ function App() {
                     Photo capturing timelapse written in Python for Rasberry Pi
                     System
                   </p>
+                  <a
+                    className="self-center"
+                    href="https://github.com/smith-megan/Fulvous"
+                  >
+                    <button className="text-white text-xs sm:text-sm rounded-none p-2 opacity-0 transition-all duration-300 group-hover:opacity-100">
+                      Github Repo
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -197,6 +207,14 @@ function App() {
                     Timed yoga session guide software written in React with
                     Typescript
                   </p>
+                  <a
+                    className="self-center"
+                    href="https://github.com/smith-megan/cerulean"
+                  >
+                    <button className="text-white text-xs sm:text-sm rounded-none p-2 opacity-0 transition-all duration-300 group-hover:opacity-100">
+                      Github Repo
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -213,6 +231,14 @@ function App() {
                     Habit tracking system written in React with Typescript,
                     NodeJs with Express, Postgres with Sequilize
                   </p>
+                  <a
+                    className="self-center"
+                    href="https://github.com/smith-megan/Galactic"
+                  >
+                    <button className="text-white text-xs sm:text-sm rounded-none p-2 opacity-0 transition-all duration-300 group-hover:opacity-100">
+                      Github Repo
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -229,6 +255,14 @@ function App() {
                     Sleep graph data system with React frontend and Python
                     backend
                   </p>
+                  <a
+                    className="self-center"
+                    href="https://github.com/smith-megan/python_sleep"
+                  >
+                    <button className="text-white text-xs sm:text-sm rounded-none p-2 opacity-0 transition-all duration-300 group-hover:opacity-100">
+                      Github Repo
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -239,7 +273,7 @@ function App() {
       <div id="Contact">
         <Contact />
       </div>
-      <div className="bg-black h-10"></div>
+      <div className="bg-dark h-10"></div>
     </>
   )
 }

@@ -37,8 +37,14 @@ function Contact() {
   }
   return (
     <div>
-      <div className="grid w-full grid-cols-3 items-center pb-3" id="Contact">
-        <img src={beachImage} className="col-span-1" />
+      <div
+        className="grid w-full grid-cols-1 sm:grid-cols-3 items-center pb-3"
+        id="Contact"
+      >
+        <img
+          src={beachImage}
+          className="col-span-1 row-start-2 sm:row-start-1 h-20 sm:h-full w-full object-cover object-bottom"
+        />
         <div className="bg-black h-full p-8 col-span-2 justify-center grid gap-5 items-center">
           <h1 className="text-white">Contact</h1>
           <form
@@ -51,12 +57,14 @@ function Contact() {
               name="name"
               placeholder="Name"
               className="bg-white border-2 border-white border-b-gray-500 p-2 col-span-2 outline-gray-200"
+              required
             />
             <input
               placeholder="Contact Info"
               name="contact"
               type="Text"
               className="bg-white border-2 border-white border-b-gray-500 p-2 col-span-2 outline-gray-200"
+              required
             />
             <textarea
               id="message"
