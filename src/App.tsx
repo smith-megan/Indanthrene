@@ -9,10 +9,12 @@ import timeImage from "./assets/images/timelapse.jpg"
 import "./App.css"
 import Nav from "./Nav"
 import Contact from "./Contact"
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   return (
     <>
+      <Analytics />
       <Nav />
       <div className="grid grid-cols-2 bg-black place-content-center">
         <div>
