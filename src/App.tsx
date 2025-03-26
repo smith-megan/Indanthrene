@@ -4,7 +4,7 @@ import rock from "./assets/images/rock.png"
 import downloadImage from "./assets/download.png"
 import matImage from "./assets/images/mat guide.jpg"
 import ticImage from "./assets/images/elevate.jpg"
-import sleepImage from "./assets/images/sleep.jpg"
+import furnitureimage from "./assets/images/NewLeafFurniture.jpg"
 import timeImage from "./assets/images/timelapse.jpg"
 import "./App.css"
 import Nav from "./Nav"
@@ -177,6 +177,29 @@ function App() {
           <div>
             <div
               className="bg-cover bg-center h-60 group z-10 items-center overflow-hidden"
+              style={{ backgroundImage: `url(${furnitureimage})` }}
+            >
+              <div className="grid z-20 items-center duration-500 justify-center w-full transition-all h-60 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/50 group-hover:to-black/70">
+                <div className="h-30 text-white transition-all duration-500 translate-y-[50%] group-hover:translate-y-0">
+                  <p className="text-sm p-2 invisible opacity-0 transition-all duration-300 group-hover:visible group-hover:opacity-100">
+                    Vite React Typescript website with Tailwind CSS
+                  </p>
+                  <a
+                    className="self-center"
+                    href="https://github.com/smith-megan/NewLeaf"
+                  >
+                    <button className="text-white text-xs sm:text-sm rounded-none p-2 opacity-0 transition-all duration-300 group-hover:opacity-100">
+                      Github Repo
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <h2 className="text-lg self-end">New Leaf Furniture</h2>
+          </div>
+          <div>
+            <div
+              className="bg-cover bg-center h-60 group z-10 items-center overflow-hidden"
               style={{ backgroundImage: `url(${timeImage})` }}
             >
               <div className="grid z-20 items-center duration-500 justify-center w-full transition-all h-60 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/50 group-hover:to-black/70">
@@ -245,30 +268,6 @@ function App() {
               </div>
             </div>
             <h2 className="text-lg">Habit System</h2>
-          </div>
-          <div>
-            <div
-              className="bg-cover bg-center h-60 group z-10 items-center overflow-hidden"
-              style={{ backgroundImage: `url(${sleepImage})` }}
-            >
-              <div className="grid z-20 items-center duration-500 justify-center w-full transition-all h-60 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/50 group-hover:to-black/70">
-                <div className="h-30 text-white transition-all duration-500 translate-y-[50%] group-hover:translate-y-0">
-                  <p className="text-sm p-2 invisible opacity-0 transition-all duration-300 group-hover:visible group-hover:opacity-100">
-                    Sleep graph data system with React frontend and Python
-                    backend
-                  </p>
-                  <a
-                    className="self-center"
-                    href="https://github.com/smith-megan/python_sleep"
-                  >
-                    <button className="text-white text-xs sm:text-sm rounded-none p-2 opacity-0 transition-all duration-300 group-hover:opacity-100">
-                      Github Repo
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <h2 className="text-lg self-end">Sleep Tracker</h2>
           </div>
         </div>
       </div>
