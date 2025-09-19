@@ -5,10 +5,12 @@ import downloadImage from "./assets/download.png"
 import matImage from "./assets/images/mat guide.jpg"
 import ticImage from "./assets/images/elevate.jpg"
 import furnitureimage from "./assets/images/NewLeafFurniture.jpg"
-import timeImage from "./assets/images/timelapse.jpg"
+// import timeImage from "./assets/images/timelapse.jpg"
+import ltmImage from "./assets/images/lfm-home.png"
 import "./App.css"
 import Nav from "./Nav"
 import Contact from "./Contact"
+import Project from "./components/Project"
 import { Analytics } from "@vercel/analytics/react"
 
 function App() {
@@ -174,102 +176,11 @@ function App() {
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-7 p-10">
-          <div>
-            <div
-              className="bg-cover bg-center h-60 group z-10 items-center overflow-hidden"
-              style={{ backgroundImage: `url(${furnitureimage})` }}
-            >
-              <div className="grid z-20 items-center duration-500 justify-center w-full transition-all h-60 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/50 group-hover:to-black/70">
-                <div className="h-30 text-white transition-all duration-500 translate-y-[50%] group-hover:translate-y-0">
-                  <p className="text-sm p-2 invisible opacity-0 transition-all duration-300 group-hover:visible group-hover:opacity-100">
-                    Vite React Typescript website with Tailwind CSS
-                  </p>
-                  <a
-                    className="self-center"
-                    href="https://github.com/smith-megan/NewLeaf"
-                  >
-                    <button className="text-white text-xs sm:text-sm rounded-none p-2 opacity-0 transition-all duration-300 group-hover:opacity-100">
-                      Github Repo
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <h2 className="text-lg self-end">New Leaf Furniture</h2>
-          </div>
-          <div>
-            <div
-              className="bg-cover bg-center h-60 group z-10 items-center overflow-hidden"
-              style={{ backgroundImage: `url(${timeImage})` }}
-            >
-              <div className="grid z-20 items-center duration-500 justify-center w-full transition-all h-60 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/50 group-hover:to-black/70">
-                <div className="h-30 text-white transition-all duration-500 translate-y-[50%] group-hover:translate-y-0">
-                  <p className="text-sm p-2 opacity-0 transition-all duration-300 group-hover:opacity-100">
-                    Photo capturing timelapse written in Python for Rasberry Pi
-                    System
-                  </p>
-                  <a
-                    className="self-center"
-                    href="https://github.com/smith-megan/Fulvous"
-                  >
-                    <button className="text-white text-xs sm:text-sm rounded-none p-2 opacity-0 transition-all duration-300 group-hover:opacity-100">
-                      Github Repo
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <h2 className="text-lg">Pi Timelapse</h2>
-          </div>
-          <div>
-            <div
-              className="bg-cover bg-center h-60 group z-10 items-center overflow-hidden"
-              style={{ backgroundImage: `url(${matImage})` }}
-            >
-              <div className="grid z-20 items-center duration-500 justify-center w-full transition-all h-60 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/50 group-hover:to-black/70">
-                <div className="h-30 text-white transition-all duration-500 translate-y-[50%] group-hover:translate-y-0">
-                  <p className="text-sm p-2 opacity-0 transition-all duration-300 group-hover:opacity-100">
-                    Timed yoga session guide software written in React with
-                    Typescript
-                  </p>
-                  <a
-                    className="self-center"
-                    href="https://github.com/smith-megan/cerulean"
-                  >
-                    <button className="text-white text-xs sm:text-sm rounded-none p-2 opacity-0 transition-all duration-300 group-hover:opacity-100">
-                      Github Repo
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <h2 className="text-lg">Mat Guide</h2>
-          </div>
-          <div>
-            <div
-              className="bg-cover bg-center h-60 group z-10 items-center overflow-hidden"
-              style={{ backgroundImage: `url(${ticImage})` }}
-            >
-              <div className="grid z-20 items-center duration-500 justify-center w-full transition-all h-60 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/50 group-hover:to-black/70">
-                <div className="h-30 text-white transition-all duration-500 translate-y-[50%] group-hover:translate-y-0">
-                  <p className="text-sm p-2 opacity-0 transition-all duration-300 group-hover:opacity-100">
-                    Habit tracking system written in React with Typescript,
-                    NodeJs with Express, Postgres with Sequilize
-                  </p>
-                  <a
-                    className="self-center"
-                    href="https://github.com/smith-megan/Galactic"
-                  >
-                    <button className="text-white text-xs sm:text-sm rounded-none p-2 opacity-0 transition-all duration-300 group-hover:opacity-100">
-                      Github Repo
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <h2 className="text-lg">Habit System</h2>
-          </div>
-        </div>
+            <Project description={"Live Vite React Typescript website with Tailwind CSS website for historical documentary service"} title={"Life Theater Media"} pic={ltmImage} link={"https://lifetheatermedia.com"}/>
+            <Project description={"Live Vite React Typescript website with Tailwind CSS"} title={"New Leaf Furniture"} pic={furnitureimage} link={"https://newleaf.furniture/"}/>
+            <Project description={"Timed yoga session guide software written in React with Typescript"} title={"Mat Guide"} pic={matImage} link={"https://github.com/smith-megan/cerulean"}/>
+            <Project description={"Habit tracking system written in React with Typescript, NodeJs with Express, Postgres with Sequilize"} title={"Habit System"} pic={ticImage} link={"https://github.com/smith-megan/Galactic"}/>
+      </div>
       </div>
       <div id="Contact">
         <Contact />
